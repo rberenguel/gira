@@ -11,7 +11,7 @@ let slopePoints = [];
 let currentPositionX = 0;
 
 let graphHeight = 120;
-let timeSpeedFactor = 10; // For debugging the graph
+let timeSpeedFactor = 1; // For debugging the graph, 1 for normal
 let elevationGainPerResistanceLevel = 8;
 let started = false;
 
