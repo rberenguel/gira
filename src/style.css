@@ -1,0 +1,77 @@
+:root {
+  --canvas-width: 400px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#full-screen-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#youtube-iframe-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#sketch-container.draggable-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 400px;
+  height: 200px;
+  z-index: 2;
+
+  backdrop-filter: blur(5px);
+  background-color: #03123066;
+  border-radius: 0.1em;
+  border: 1px solid #c60;
+  padding: 0.3em;
+}
+
+#sketch-holder {
+  width: 400px;
+  height: 200px;
+  background-color: transparent;
+}
+
+#resistance-display-container {
+  user-select: none;
+  position: fixed;
+  width: var(--canvas-width);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#current-resistance-text {
+  font-family: "monoidregular";
+  font-size: 18px;
+  color: #c60;
+}
+
+#next-resistance-text {
+  font-family: "monoidregular";
+  font-size: 13px;
+  color: #aa0;
+  margin-top: 5px;
+}
+
+#metap-trigger {
+  color: #aa0;
+  position: fixed;
+  cursor: pointer;
+  z-index: 1000;
+}

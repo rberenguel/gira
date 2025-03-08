@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gira</title>
+    <script src="libs/p5.min.js"></script>
+    <script src="libs/interact.min.js"></script>
+    <script src="libs/interact.min.js"></script>
+    <link href="libs/metap/metap.css" rel="stylesheet" />
+    <script src="libs/metap/metap.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div id="full-screen-container">
+      <div id="youtube-iframe-container" class="iframe-container">
+        <iframe
+          width="100%"
+          height="100%"
+          src=""
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div id="sketch-container" class="draggable-container">
+        <div id="metap-trigger">☰</div>
+        <div id="sketch-holder">
+          <div id="resistance-display-container">
+            <div id="current-resistance-text"></div>
+            <div id="next-resistance-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="src/script.js"></script>
+  </body>
+</html>

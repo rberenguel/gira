@@ -1,0 +1,6 @@
+[submodule "metap"]
+	path = metap
+	url = git@github.com:rberenguel/metap.git
+[submodule "libs/metap"]
+	path = libs/metap
+	url = git@github.com:rberenguel/metap.git
