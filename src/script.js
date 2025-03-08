@@ -301,7 +301,7 @@ let playlistUrl = await get("playlistUrl");
 console.info(`Stored URL: ${playlistUrl}`);
 
 // If no video has been ever provided I add a potential placeholder one.
-if (!playlistUrl.trim()) {
+if (!playlist || !playlistUrl.trim()) {
   playlistUrl = "https://www.youtube.com/embed/vtIzMaLkCaM?si=8yYT3QU43wvBkJNI";
 }
 
